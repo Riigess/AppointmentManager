@@ -26,11 +26,9 @@ jobs:
          echo export JAVA_HOME="/usr/lib/jvm/jdk1.8.0_401" >> ~/.bashrc &&
          source ~/.bashrc
 
-    steps:
     - name: Print JDK Version
       run: java -version
 
-    steps:
     - name: Install Maven
       run:
          sudo apt install maven -y
